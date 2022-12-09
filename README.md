@@ -28,7 +28,7 @@ then input your number of vertex and densitity in graph ,then the result will be
 
 then calculate the cost and  time for EDDIP\EDDA\Random\Greedy\MMR
 
-> <b> run main.py 
+>  run main.py 
 
 if your want to adjust some parameter of the problems, you can amend this command：
 
