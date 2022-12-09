@@ -16,18 +16,19 @@ I test the reproduction code in pycharm2020.
 
 for single example experiment, you should fir generate a GP model graph by python NetworkX.
 
-#### 高亮 Html 代码
+###
 ```html
-run GreatGrapgGM.py  ,input your number of vertex and edges in graph ,then the result will be restored in randomNetwork01.txt.
+> run GreatGrapgGM.py 
 
-or 
+then input your number of vertex and edges in graph ,then the result will be restored in randomNetwork01.txt.
 
-run GreatGrapgGP.py  ,input your number of vertex and densitity in graph ,then the result will be restored in randomNetwork02.txt.
+> or run GreatGrapgGP.py 
 
+then input your number of vertex and densitity in graph ,then the result will be restored in randomNetwork02.txt.
 
 then calculate the cost and  time for EDDIP\EDDA\Random\Greedy\MMR
 
-run main.py.
+> run main.py.
 
 if your want to adjust some parameter of the problems, you can amend this command：
 
@@ -36,16 +37,15 @@ if your want to adjust some parameter of the problems, you can amend this comman
 ```python
 g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')
 ```
-#### Result of a example 
+### Result of a example 
 
 >i run GreateGraphGP.py
 
->i input : 10,1.2
->i output:
-
+>i input : 10,1.2 <br>
+>i output: <br>
+```html
 >s <b>randomNetwork02.txt<br></b>
->s 0 1 1 1 0 0 0 1 1 1 
-
+>s 0 1 1 1 0 0 0 1 1 1  <br>
 >s 1 0 1 1 0 0 0 0 0 0 <br>
 >s 1 1 0 1 0 0 0 0 0 0 <br>
 >s 1 1 1 0 1 0 0 0 0 0 <br>
@@ -57,12 +57,15 @@ g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')
 >s 1 0 0 0 0 0 0 0 0 0 <br>
 >s 2 1 4 8 3 9 5 10 <br>
 
-![text](D:\SikiUser\code\一些github开发\2.png)
-
+![text](D:/SikiUser/code/一些github开发/2.png)
+```
+```python
 >i run main.py<br>
-
+```
+```python
 >g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')<br>
-
+```
+```html
 >i output:<br>
 > 物种算法得到的cost 和 计算时间分别为：<br>
 > Greedy: cost = 46 time = 0.0<br>
@@ -74,8 +77,8 @@ g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')
 >  red represences the specified edge server -> r node.<br>
 >  green represences the common edge server -> common node.<br>
 >  the graph visualization like the below image shows:<br>
-> ![text](D:\SikiUser\code\一些github开发\23.png)<br>
 
+> ![text](D:/SikiUser/code/一些github开发/23.png)
 ## dataset
 
 https://github.com/swinedge/eua-dataset<br>
