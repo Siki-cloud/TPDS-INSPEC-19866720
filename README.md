@@ -3,7 +3,7 @@ This code accompanies the paper  "Cost-Effective App Data Distribution in Edge C
 In this repository, the features below are implemented:
 - reproduct EDDIP、EDDA alogrithms proposed by the paper.
 - reproduct referenced constrastive algrithms Random,Greedy, MMR[2]  
-- train for EUA dataset[2]https://github.com/swinedge/eua-dataset
+- train for EUA dataset : https://github.com/swinedge/eua-dataset
 
 ## Usage
 for implement this code,you should install at first:
@@ -38,28 +38,27 @@ if your want to adjust some parameter of the problems, you can amend this comman
 g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')
 ```
 ### Result of a example 
-
->i run GreateGraphGP.py
-
->i input : 10,1.2 <br>
->i output: <br>
 ```html
->s <b>randomNetwork02.txt<br></b>
->s 0 1 1 1 0 0 0 1 1 1  <br>
->s 1 0 1 1 0 0 0 0 0 0 <br>
->s 1 1 0 1 0 0 0 0 0 0 <br>
->s 1 1 1 0 1 0 0 0 0 0 <br>
->s 0 0 0 1 0 0 0 0 0 0 <br>
->s 0 0 0 0 0 0 0 0 0 0 <br>
->s 0 0 0 0 0 0 0 0 0 0 <br>
->s 1 0 0 0 0 0 0 0 0 0 <br>
->s 1 0 0 0 0 0 0 0 0 0 <br>
->s 1 0 0 0 0 0 0 0 0 0 <br>
->s 2 1 4 8 3 9 5 10 <br>
+> run GreateGraphGP.py
 
-![text](D:/SikiUser/code/一些github开发/2.png)
+> input : 10,1.2 
+> output: 
+
+> randomNetwork02.txt
+0 1 1 1 0 0 0 1 1 1 
+1 0 1 1 0 0 0 0 0 0 
+1 1 0 1 0 0 0 0 0 0 
+1 1 1 0 1 0 0 0 0 0 
+0 0 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 
+2 1 4 8 3 9 5 10 
 
 ```
+![](https://github.com/Siki-cloud/TPDS-INSPEC-19866720/blob/e48ce4fa0a8541cb54c1b05abb86c11f663834ce/photos/2.png)
 ```python
 >i run main.py<br>
 ```
@@ -67,20 +66,20 @@ g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')
 >g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')<br>
 ```
 ```html
->i output:<br>
-> 物种算法得到的cost 和 计算时间分别为：<br>
-> Greedy: cost = 46 time = 0.0<br>
-> Random: cost = 225 time = 0.0<br>
-> EDDA: cost = 46 time = 0.0019714832305908203<br>
-> EDDIP: cost = 46 time = 0.010987043380737305<br>
-> MMR: cost = 46 time = 0.005053520202636719<br>
+output:
+> 物种算法得到的cost 和 计算时间分别为：
+> Greedy: cost = 46 time = 0.0
+> Random: cost = 225 time = 0.0
+> EDDA: cost = 46 time = 0.0019714832305908203
+> EDDIP: cost = 46 time = 0.010987043380737305
+> MMR: cost = 46 time = 0.005053520202636719
 <br>
->  red represences the specified edge server -> r node.<br>
->  green represences the common edge server -> common node.<br>
->  the graph visualization like the below image shows:<br>
+>  red represences the specified edge server -> r node.
+>  green represences the common edge server -> common node.
+>  the graph visualization like the below image shows:
 
 ```
-![text](D:/SikiUser/code/一些github开发/23.png)
+![](https://github.com/Siki-cloud/TPDS-INSPEC-19866720/blob/e48ce4fa0a8541cb54c1b05abb86c11f663834ce/photos/23.png)
 
 ## dataset
 
