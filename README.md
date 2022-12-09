@@ -18,17 +18,17 @@ for single example experiment, you should fir generate a GP model graph by pytho
 
 ###
 ```html
-><b> run GreatGrapgGM.py </b>
+> run GreatGrapgGM.py 
 
 then input your number of vertex and edges in graph ,then the result will be restored in randomNetwork01.txt.
 
-> or<b> run GreatGrapgGP.py  </b>
+> or run GreatGrapgGP.py  
 
 then input your number of vertex and densitity in graph ,then the result will be restored in randomNetwork02.txt.
 
 then calculate the cost and  time for EDDIP\EDDA\Random\Greedy\MMR
 
-> <b> run main.py </b>
+> <b> run main.py 
 
 if your want to adjust some parameter of the problems, you can amend this command：
 
