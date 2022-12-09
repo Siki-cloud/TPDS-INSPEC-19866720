@@ -18,17 +18,17 @@ for single example experiment, you should fir generate a GP model graph by pytho
 
 ###
 ```html
-> run GreatGrapgGM.py 
+><b> run GreatGrapgGM.py </b>
 
 then input your number of vertex and edges in graph ,then the result will be restored in randomNetwork01.txt.
 
-> or run GreatGrapgGP.py 
+> or<b> run GreatGrapgGP.py  </b>
 
 then input your number of vertex and densitity in graph ,then the result will be restored in randomNetwork02.txt.
 
 then calculate the cost and  time for EDDIP\EDDA\Random\Greedy\MMR
 
-> run main.py.
+> <b> run main.py </b>
 
 if your want to adjust some parameter of the problems, you can amend this command：
 
@@ -58,6 +58,7 @@ g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')
 >s 2 1 4 8 3 9 5 10 <br>
 
 ![text](D:/SikiUser/code/一些github开发/2.png)
+
 ```
 ```python
 >i run main.py<br>
@@ -78,7 +79,9 @@ g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')
 >  green represences the common edge server -> common node.<br>
 >  the graph visualization like the below image shows:<br>
 
-> ![text](D:/SikiUser/code/一些github开发/23.png)
+```
+![text](D:/SikiUser/code/一些github开发/23.png)
+
 ## dataset
 
 https://github.com/swinedge/eua-dataset<br>
