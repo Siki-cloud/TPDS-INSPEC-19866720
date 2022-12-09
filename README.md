@@ -7,22 +7,28 @@ In this repository, the features below are implemented:
 
 ## Usage
 for implement this code,you should install at first:
-<code>
-- python >=3.7
-- python library networkx、 matplotlib、 queue
-</code>
+>
+> - python >=3.7
+> - python library networkx、 matplotlib、 queue
+>
 
 I test the reproduction code in pycharm2020.
+
 for single example experiment, you should fir generate a GP model graph by python NetworkX.
 
 #### 高亮 Html 代码
 ```html
 run GreatGrapgGM.py  ,input your number of vertex and edges in graph ,then the result will be restored in randomNetwork01.txt.
+
 or 
+
 run GreatGrapgGP.py  ,input your number of vertex and densitity in graph ,then the result will be restored in randomNetwork02.txt.
 
+
 then calculate the cost and  time for EDDIP\EDDA\Random\Greedy\MMR
+
 run main.py.
+
 if your want to adjust some parameter of the problems, you can amend this command：
 
 ```
@@ -39,40 +45,41 @@ g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')
 
 >s <b>randomNetwork02.txt<br></b>
 >s 0 1 1 1 0 0 0 1 1 1 
->s 1 0 1 1 0 0 0 0 0 0 
->s 1 1 0 1 0 0 0 0 0 0 
->s 1 1 1 0 1 0 0 0 0 0 
->s 0 0 0 1 0 0 0 0 0 0 
->s 0 0 0 0 0 0 0 0 0 0 
->s 0 0 0 0 0 0 0 0 0 0 
->s 1 0 0 0 0 0 0 0 0 0 
->s 1 0 0 0 0 0 0 0 0 0 
->s 1 0 0 0 0 0 0 0 0 0 
->s 2 1 4 8 3 9 5 10 
+
+>s 1 0 1 1 0 0 0 0 0 0 <br>
+>s 1 1 0 1 0 0 0 0 0 0 <br>
+>s 1 1 1 0 1 0 0 0 0 0 <br>
+>s 0 0 0 1 0 0 0 0 0 0 <br>
+>s 0 0 0 0 0 0 0 0 0 0 <br>
+>s 0 0 0 0 0 0 0 0 0 0 <br>
+>s 1 0 0 0 0 0 0 0 0 0 <br>
+>s 1 0 0 0 0 0 0 0 0 0 <br>
+>s 1 0 0 0 0 0 0 0 0 0 <br>
+>s 2 1 4 8 3 9 5 10 <br>
 
 ![text](D:\SikiUser\code\一些github开发\2.png)
 
->i run main.py
+>i run main.py<br>
 
->g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')
+>g=createGM(yg=20,dlimit=2,rnump=1,readfile='randomNetwork02.txt')<br>
 
->i output:
-> 物种算法得到的cost 和 计算时间分别为：
-> Greedy: cost = 46 time = 0.0
-> Random: cost = 225 time = 0.0
-> EDDA: cost = 46 time = 0.0019714832305908203
-> EDDIP: cost = 46 time = 0.010987043380737305
-> MMR: cost = 46 time = 0.005053520202636719
-
->  red represences the specified edge server -> r node.
->  green represences the common edge server -> common node.
->  the graph visualization like the below image shows:
-> ![text](D:\SikiUser\code\一些github开发\23.png)
+>i output:<br>
+> 物种算法得到的cost 和 计算时间分别为：<br>
+> Greedy: cost = 46 time = 0.0<br>
+> Random: cost = 225 time = 0.0<br>
+> EDDA: cost = 46 time = 0.0019714832305908203<br>
+> EDDIP: cost = 46 time = 0.010987043380737305<br>
+> MMR: cost = 46 time = 0.005053520202636719<br>
+<br>
+>  red represences the specified edge server -> r node.<br>
+>  green represences the common edge server -> common node.<br>
+>  the graph visualization like the below image shows:<br>
+> ![text](D:\SikiUser\code\一些github开发\23.png)<br>
 
 ## dataset
 
-https://github.com/swinedge/eua-dataset
+https://github.com/swinedge/eua-dataset<br>
 
 ## Reference
-[1]X. Xia, F. Chen, Q. He, J. C. Grundy, M. Abdelrazek and H. Jin, "Cost-Effective App Data Distribution in Edge Computing," in IEEE Transactions on Parallel and Distributed Systems, vol. 32, no. 1, pp. 31-44, 1 Jan. 2021, doi: 10.1109/TPDS.2020.3010521.
-[2] G. Xue, “Minimum-cost QoS multicast and unicast routing in communication networks,” IEEE Trans. Commun., vol. 51, no. 5, pp. 817–824, May 2003.
+[1]X. Xia, F. Chen, Q. He, J. C. Grundy, M. Abdelrazek and H. Jin, "Cost-Effective App Data Distribution in Edge Computing," in IEEE Transactions on Parallel and Distributed Systems, vol. 32, no. 1, pp. 31-44, 1 Jan. 2021, doi: 10.1109/TPDS.2020.3010521.<br>
+[2] G. Xue, “Minimum-cost QoS multicast and unicast routing in communication networks,” IEEE Trans. Commun., vol. 51, no. 5, pp. 817–824, May 2003.<br>
